@@ -1,6 +1,6 @@
 ## gpt-2-cobalt
 
-A fork of OpenAI's gpt-2, including a Python server running on local port `7001` for receiving completion tasks from the Cobalt bot. The server communicates entirely in plaintext (but this may change in the future if more features are needed).
+A fork of OpenAI's gpt-2, including a Python server running on local port `7001` for receiving completion tasks from the [Cobalt bot](https://github.com/the-sink/Cobalt). The server communicates entirely in plaintext (but this may change in the future if more features are needed).
 
 First, you need to download the model you'd like to use (124M, 345M, 774M, or 1.5B):
 
