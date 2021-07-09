@@ -83,13 +83,6 @@ def interact_model(
                     generated = 0
                     response = ""
 
-                    output = sample.sample_sequence(
-                        hparams=hparams, length=lTotal,
-                        context=context,
-                        batch_size=batch_size,
-                        temperature=temperature, top_k=top_k, top_p=top_p
-                    )
-
                     for _ in range(nsamples // batch_size):
                         out = sess.run(output, feed_dict={
                             context: [context_tokens for _ in range(batch_size)]
